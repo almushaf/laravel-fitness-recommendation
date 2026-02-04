@@ -1,41 +1,51 @@
-# 🚀 Laravel Fitness Recommendation System (SAW)
+# 🏋️ Laravel Fitness Training Recommendation System
 
-A web-based fitness training recommendation system built with **Laravel**, implementing the **Simple Additive Weighting (SAW)** method to recommend workout programs based on user fitness goals.
+A web-based fitness training recommendation system built with Laravel, implementing the Simple Additive Weighting (SAW) method to assist users in selecting training programs based on their fitness goals.
 
-This project showcases backend logic, decision support systems, and full-stack web development using Laravel.
-
----
-
-## 🎯 Features
-
-- 🔐 User authentication & authorization
-- 🏋️ Fitness program management (CRUD)
-- 📊 Workout recommendations using **SAW method**
-- 📈 Training program monitoring
-- 🔍 Search & pagination
-- 🧠 Weighted decision-making logic
+🔗 **Live Demo**: https://rekomendasi-latihan.wuaze.com/
 
 ---
 
-## 🛠 Tech Stack
+## 📌 Project Purpose
 
-- **Backend**: Laravel 10, PHP 8
-- **Database**: MySQL
-- **Frontend**: Blade, Bootstrap
-- **Algorithm**: Simple Additive Weighting (SAW)
-- **Tools**: Git, GitHub, XAMPP
+This project was developed as a portfolio project to demonstrate:
+- Backend web development using Laravel
+- Decision Support System implementation (SAW method)
+- Fitness program recommendation logic
+- Authentication, role-based access, and CRUD operations
 
 ---
 
-## 🧮 SAW Method Overview
+## 🚀 Features
 
-The **Simple Additive Weighting (SAW)** method is used to rank workout programs based on weighted criteria such as:
+- User authentication (login & registration)
+- Fitness goal selection
+- Training program recommendation using SAW
+- Admin dashboard for managing programs & criteria
+- Responsive and clean user interface
 
-- Training frequency
-- Workout intensity
-- User fitness goals (muscle gain, strength training, weight loss)
+---
 
-Each alternative is normalized and scored to produce the best recommendation.
+## 🛠️ Tech Stack
+
+- Laravel
+- PHP
+- MySQL
+- Blade Template
+- Bootstrap / Custom CSS
+- Shared Hosting (InfinityFree)
+
+---
+
+## 👤 Demo Accounts
+
+**Admin**
+- Username: admin
+- Password: admin123
+
+**User**
+- Username: testuser
+- Password: password
 
 ---
 
@@ -48,20 +58,11 @@ composer install
 cp .env.example .env
 php artisan key:generate
 php artisan migrate --seed
-php artisan serve
-
-## 📌 Project Purpose
-
-This project was developed as a portfolio project to demonstrate:
-- Backend development with Laravel
-- Decision Support System implementation (SAW method)
-- Database design and system logic
-
----
 
 ## 👤 Author
 
 Al Mushaf  
-Backend / Laravel Developer  
+Laravel-focused Web Developer with experience in building full-stack web applications, covering backend logic, database design, and frontend implementation using Blade templates.  
+Skilled in authentication systems, CRUD dashboards, and data-driven features such as decision support systems using the Simple Additive Weighting (SAW) method.
 
-GitHub: https://github.com/almushaf
+GitHub: https://github.com/almushaf  
