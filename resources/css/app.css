@@ -1,0 +1,199 @@
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+/* ===============================
+   LOGIN CARD (RIGHT)
+================================ */
+
+.login-card {
+    max-width: 420px;
+    padding: 2rem;
+    border-radius: 22px;
+    background: #ffffff;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.12),
+        0 4px 10px rgba(0, 0, 0, 0.06);
+
+    animation: fadeUp 0.6s ease-out;
+}
+
+.login-title {
+    margin-bottom: 1.25rem;
+    font-weight: 600;
+}
+
+/* Input */
+.login-input {
+    padding: 0.65rem 0.75rem;
+    border-radius: 12px;
+    border: 1px solid #dee2e6;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.login-input:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.15rem rgba(13,110,253,0.25);
+}
+
+/* Button */
+.login-btn {
+    padding: 0.7rem;
+    border-radius: 12px;
+    font-weight: 500;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.login-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(13,110,253,0.35);
+}
+
+/* Micro spacing & text */
+.login-card .form-label {
+    font-size: 0.85rem;
+    color: #6c757d;
+}
+
+.login-card .alert {
+    font-size: 0.85rem;
+    padding: 0.5rem 0.75rem;
+}
+
+/* Animation */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===============================
+   LOGIN LEFT (BRANDING)
+================================ */
+
+.login-left {
+    background: linear-gradient(
+        135deg,
+        #0d6efd 0%,
+        #0a58ca 60%,
+        #084298 100%
+    );
+    position: relative;
+    overflow: hidden;
+}
+
+.login-left::before {
+    content: '';
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    top: -120px;
+    left: -120px;
+}
+
+.login-left > * {
+    position: relative;
+    z-index: 1;
+}
+
+.login-left h1 {
+    letter-spacing: 1px;
+}
+
+.login-left p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+.login-btn:disabled {
+    opacity: 0.85;
+    cursor: not-allowed;
+}
+
+
+.app-layout {
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-navbar {
+    min-height: 64px;
+    padding: 0.75rem 1.25rem;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #0d6efd, #0a58ca);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+.app-navbar .navbar-brand {
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.app-navbar .nav-link {
+    position: relative;
+    color: rgba(255,255,255,0.85);
+    transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.app-navbar .nav-link:hover {
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+.app-navbar .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: width 0.25s ease;
+}
+
+.app-navbar .nav-link:hover::after {
+    width: 100%;
+}
+
+.app-navbar .nav-link.active {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.app-navbar .nav-link.active::after {
+    width: 100%;
+}
+
+.app-bg {
+    background: linear-gradient(
+        180deg,
+        #f1f3f6 0%,
+        #e9ecf1 100%
+    );
+}
+
+.app-main {
+    flex: 1;
+    padding: 2rem 0;
+}
+.container > h1,
+.container > h2 {
+    margin-bottom: 1.5rem;
+}
