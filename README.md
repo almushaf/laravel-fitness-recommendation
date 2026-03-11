@@ -28,12 +28,12 @@ This project was developed as a portfolio project to demonstrate:
 
 ## 🛠️ Tech Stack
 
-- Laravel
-- PHP
-- MySQL
-- Blade Template
-- Bootstrap / Custom CSS
-- Shared Hosting (InfinityFree)
+- Language: PHP
+- Backend Framework: Laravel 10
+- Database: MySQL
+- Frontend: Blade, Bootstrap
+- Algorithm: Simple Additive Weighting (SAW)
+- Tools: Git, GitHub
 
 ---
 
