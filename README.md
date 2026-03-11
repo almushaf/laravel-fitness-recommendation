@@ -40,13 +40,13 @@ This project was developed as a portfolio project to demonstrate:
 ## 👤 Demo Accounts
 
 **Admin**
-- Username: admin
-- Password: admin123
+- Username: 
+- Password: 
 
 **User**
 - Username: testuser
 - Password: password
-
+- atau bisa daftar dulu
 ---
 
 ## ⚙️ Installation (Local Setup)
