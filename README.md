@@ -36,7 +36,11 @@ This project was developed as a portfolio project to demonstrate:
 - Tools: Git, GitHub
 
 ---
-
+## Screenshots
+![Admin Project List](screenshots/admin-project-list.png)
+![Admin Project List](screenshots/create-project.png)
+![Admin Project List](screenshots/recommendation-page.png)
+![Admin Project List](screenshots/workout-log.png)
 ## 👤 Demo Accounts
 
 **Admin**
